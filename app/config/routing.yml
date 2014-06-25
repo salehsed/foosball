@@ -1,4 +1,4 @@
-my_co_blog:
-    resource: "@MyCoBlogBundle/Resources/config/routing.yml"
+tagged_foosball:
+    resource: "@TaggedFoosballBundle/Controller/"
+    type:     annotation
     prefix:   /
-

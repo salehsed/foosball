@@ -1,7 +1,0 @@
-parameters:
-#    my_co_blog.example.class: MyCo\Bundle\BlogBundle\Example
-
-services:
-#    my_co_blog.example:
-#        class: %my_co_blog.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

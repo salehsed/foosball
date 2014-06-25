@@ -1,3 +1,0 @@
-my_co_blog_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: MyCoBlogBundle:Default:index }

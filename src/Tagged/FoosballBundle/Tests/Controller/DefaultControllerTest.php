@@ -1,6 +1,6 @@
 <?php
 
-namespace MyCo\Bundle\BlogBundle\Tests\Controller;
+namespace Tagged\FoosballBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
