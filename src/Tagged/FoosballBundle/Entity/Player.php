@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: saleh.sedighi
- * Date: 6/25/14
- * Time: 12:46 PM
- */
 
-namespace MyCo\Bundle\BlogBundle\Entity;
+
+namespace Tagged\FoosballBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -27,4 +22,37 @@ class Player {
      */
     protected $name;
 
-} 
+    
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Player
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+}

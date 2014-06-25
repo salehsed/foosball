@@ -1,0 +1,44 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>FoosballGame</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Player1</th>
+                <td>{{ entity.player1 }}</td>
+            </tr>
+            <tr>
+                <th>Player2</th>
+                <td>{{ entity.player2 }}</td>
+            </tr>
+            <tr>
+                <th>Player1_score</th>
+                <td>{{ entity.player1score }}</td>
+            </tr>
+            <tr>
+                <th>Player2_score</th>
+                <td>{{ entity.player2score }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}
