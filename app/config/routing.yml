@@ -1,0 +1,4 @@
+my_co_blog:
+    resource: "@MyCoBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
